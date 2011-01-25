@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libmm-omxcore
 
+#Gallery 2d
+PRODUCT_PACKAGES += Gallery
+
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -58,6 +61,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/hero/hero-keypad.kl:system/usr/keylayout/hero-keypad.kl \
     device/htc/hero/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl
+    
+# GSM APN list
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
@@ -67,9 +74,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libhtc_ril.so \
     ro.ril.hsxpa=2 \
     ro.ril.hsupa.category=5 \
+    ro.ril.enable.a52=1 \
+    ro.ril.enable.a53=1 \
     ro.ril.def.agps.mode=2 \
     ro.ril.def.agps.feature=1 \
+    ro.ril.gprsclass=10 \
     wifi.interface=tiwlan0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    windowsmgr.max_events_per_sec= 60 \
+    windowsmgr.support_rotation_270=true
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
@@ -100,6 +114,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=1 \
     ro.com.google.locationfeatures=1
+
+# stagefright settings
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-meta=true \
+    media.stagefright.enable-scan=true \
+    media.stagefright.enable-http=true
 
 # media configuration xml file
 PRODUCT_COPY_FILES += \
