@@ -42,10 +42,8 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     VoiceDialer \
     libOmxCore \
-    libOmxVenc \
-    libOmxVdec \
-    libmm-omxcore \
-    libcamera
+    libOmxVidEnc \
+    libmm-omxcore
 
 #Gallery 2d
 PRODUCT_PACKAGES += Gallery
@@ -122,7 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Default network type
 # 0 => WCDMA Preferred.
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=1 \
+    ro.telephony.default_network=0 \
     ro.com.google.locationfeatures=1
 
 # stagefright settings
