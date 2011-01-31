@@ -20,6 +20,10 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
+
+    <!-- Our device doesn't animate well. -->
+    <bool name="config_animateScreenLights">false</bool>
+
     <!--
      The 2d accelerator can't do an alpha transformation of
              a surface with an alpha channel, so enable this special mode
