@@ -40,18 +40,13 @@ int init_nusensors(hw_module_t const* module, hw_device_t** device);
 #define ID_A  (0)
 #define ID_M  (1)
 #define ID_O  (2)
-#define ID_P  (3)
-#define ID_L  (4)
+#define ID_L  (3)
 
 /*****************************************************************************/
 
 /*
  * The SENSORS Module
  */
-
-/* the CM3602 is a binary proximity sensor that triggers around 9 cm on
- * this hardware */
-#define PROXIMITY_THRESHOLD_CM  9.0f
 
 /*****************************************************************************/
 
@@ -75,7 +70,6 @@ int init_nusensors(hw_module_t const* module, hw_device_t** device);
 
 #define EVENT_TYPE_TEMPERATURE      ABS_THROTTLE
 #define EVENT_TYPE_STEP_COUNT       ABS_GAS
-#define EVENT_TYPE_PROXIMITY        ABS_DISTANCE
 #define EVENT_TYPE_LIGHT            ABS_MISC
 
 // 720 LSG = 1G
