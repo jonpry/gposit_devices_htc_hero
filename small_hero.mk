@@ -21,10 +21,10 @@
 
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/small_base.mk)
 $(call inherit-product, device/htc/hero/device_hero_eu.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_hero
+PRODUCT_NAME := small_hero
 PRODUCT_DEVICE := hero
-PRODUCT_MODEL := Full Android on Hero
+PRODUCT_MODEL := Small Android on Hero

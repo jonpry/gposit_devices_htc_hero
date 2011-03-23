@@ -164,6 +164,3 @@ PRODUCT_COPY_FILES += \
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
-
-$(call inherit-product, build/target/product/full.mk)
-
