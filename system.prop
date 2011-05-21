@@ -9,7 +9,6 @@ ro.ril.hsupa.category=12
 ro.ril.enable.a52=1
 ro.ril.enable.a53=1
 ro.ril.def.agps.mode=2
-ro.ril.def.agps.feature=1
 ro.ril.gprsclass=10
 ro.telephony.default_network=0
 wifi.interface=tiwlan0
@@ -19,7 +18,6 @@ wifi.supplicant_scan_interval=60
 ro.sf.lcd_density=160
 windowsmgr.max_events_per_sec=60
 settings.display.autobacklight=1
-settings.display.brightness=143
 
 # The OpenGL ES API level that is natively supported by this device.
 ro.opengles.version=65536
