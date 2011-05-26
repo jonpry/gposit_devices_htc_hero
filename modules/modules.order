@@ -4,4 +4,4 @@ kernel/drivers/net/wireless/tiwlan1251/wlan.ko
 kernel/drivers/hid/hid-dummy.ko
 kernel/drivers/staging/ramzswap/ramzswap.ko
 kernel/net/ipv4/ip_gre.ko
-kernel/net/tun.ko
+

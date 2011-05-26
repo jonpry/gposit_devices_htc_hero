@@ -10,5 +10,5 @@ drivers/net/wireless/tiwlan1251/wlan.ko sdio:c07v*d*
 
 net/ipv4/ip_gre.ko rtnl_link_gretap rtnl_link_gre
 
-net/tun.ko
+
 

@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
     device/htc/hero/modules/modules.dep.bb:system/lib/modules/$(KERNEL_NAME)/modules.dep.bb \
     device/htc/hero/modules/modules.order:system/lib/modules/$(KERNEL_NAME)/modules.order \
     device/htc/hero/modules/ip_gre.ko:system/lib/modules/$(KERNEL_NAME)/net/ipv4/ip_gre.ko \
-    device/htc/hero/modules/tun.ko:system/lib/modules/$(KERNEL_NAME)/net/tun.ko \
     device/htc/hero/modules/wlan.ko:system/lib/modules/$(KERNEL_NAME)/drivers/net/wireless/tiwlan1251/wlan.ko \
     device/htc/hero/modules/hid-dummy.ko:system/lib/modules/$(KERNEL_NAME)/drivers/hid/hid-dummy.ko \
     device/htc/hero/modules/ramzswap.ko:system/lib/modules/$(KERNEL_NAME)/drivers/staging/ramzswap/ramzswap.ko \
