@@ -21,7 +21,6 @@ settings.display.autobacklight=1
 
 # The OpenGL ES API level that is natively supported by this device.
 ro.opengles.version=65536
-debug.sf.hw=1
 ro.product.multi_touch_enabled=true
 
 # Tweaks
